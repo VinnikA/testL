@@ -1,0 +1,31 @@
+.card {
+  width: 80px;
+  height: 104px;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  color: transparent;
+  font-family: 'Poppins' sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  &:hover {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  &_visible {
+    color: #000;
+  }
+  &_active {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+    border-color: #ED5517;
+    color: #000;
+  }
+  &_correct {
+    border-color: #0A0A0C;
+    cursor: default;
+    color: #000;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
